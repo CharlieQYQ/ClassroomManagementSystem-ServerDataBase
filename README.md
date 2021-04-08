@@ -19,7 +19,9 @@
     - phpMyAdmin 4.4 （其实没用上）
 
 ## 使用软件
-- 数据库连接：Navicat Premium v15
+- 数据库连接
+    - Navicat Premium v15
+    - SQLyog
 - PHP编写：Visual Studio Code
 
 ## 更新记录

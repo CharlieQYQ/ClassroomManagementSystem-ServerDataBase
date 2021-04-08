@@ -36,7 +36,7 @@ WHERE Times&$Times AND Weeks&$Weeks AND Weekdays=$Weekdays
 UNION
 SELECT RoomName
 FROM Room_Application
-WHERE Times&$Times AND Weeks&$Weeks AND Weekdays=$Weekdays
+WHERE Times&$Times AND Weeks&$Weeks AND Weekdays=$Weekdays AND ApplicationStatus NOT LIKE'FAIL'
 )";
 $res=$conn->query($sql);
 
