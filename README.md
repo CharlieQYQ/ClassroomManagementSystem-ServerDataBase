@@ -22,6 +22,22 @@
 - 数据库连接：Navicat Premium v15
 - PHP编写：Visual Studio Code
 
+## 更新记录
+- 2021.4.1
+    - 创建目录和Github仓库
+    - 上传测试用的select.php
+    - 上传数据库设计
+- 2021.4.7
+    - 上传调试好的测试select3.php
+- 2021.4.8
+    - 删除select.php系列
+    - 新建上传php接口
+        - StudentLogin.php
+        - TeacherLogin.php
+        - RoomQuery.php
+    - 上传修改的数据库设计
+    - 新建Guide.md，用于说明php接口
+
 ## 其他
 - 域名是自己在腾讯云上购买的
 - 使用腾讯DNSPOD解析域名
