@@ -96,3 +96,37 @@
     	- 教室容量
     		- "Capacity"
     		- 字符串类型（理应为INT，但PHP返回转为字符串）
+
+### 4.申请信息提交接口
+- 功能：提交申请信息，教师提交和学生提交为同一接口
+	- 如果是学生，默认状态为WAIT
+	- 如果是老师，默认状态为PASS
+- 接口名：ApplicationUpload.php
+- 地址:https://abc.charlieqyq.top:29999/ApplicationUpload.php
+- 输入数据
+	- 申请人ID
+		- ID
+		- 字符串类型
+	- 教室名称
+		- RoomName
+		- 字符串类型
+	- 周次
+		- Weeks
+		- 字符串类型
+	- 星期
+		- Weekdays
+		- 字符串类型
+	- 节次
+		- Times
+		- 字符串类型 '1,2' （还未测试）
+	- 申请原因
+		- Reason
+		- 字符串类型
+	- 审批教师
+		- TeacherID
+		- 字符串类型
+- 返回数据
+	- 成功插入
+		- "INSERT Success"
+	- 发生错误
+		- "INSERT ERROR:". "\<br\>" . \$sql . "\<br\>" . "ERROR Num: " . \$conn->errno

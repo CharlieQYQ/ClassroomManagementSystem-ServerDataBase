@@ -23,6 +23,10 @@
     - Navicat Premium v15
     - SQLyog
 - PHP编写：Visual Studio Code
+- 连接测试：Chrome浏览器
+- MarkDown编写
+    - Typora
+    - Visual Studio Code
 
 ## 更新记录
 - 2021.4.1
@@ -40,6 +44,10 @@
         - ApplicationUpload.php (仍在编写)
     - 上传修改的数据库设计
     - 新建Guide.md，用于说明php接口
+- 2021.4.9
+    - 完成ApplicationUpload.php的编写和自身调试，未与前端联合调试
+    - 更新Guide.md
+    - 上传修改的数据库设计
 
 ## 其他
 - 域名是自己在腾讯云上购买的
