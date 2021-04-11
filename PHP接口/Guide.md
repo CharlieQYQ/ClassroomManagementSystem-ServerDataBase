@@ -130,3 +130,43 @@
 		- "INSERT Success"
 	- 发生错误
 		- "INSERT ERROR:". "\<br\>" . \$sql . "\<br\>" . "ERROR Num: " . \$conn->errno
+
+### 5.申请信息查询接口
+- 功能：查询申请ID对应的所有申请记录
+- 接口名：AppliQuery.php
+- 地址:https://abc.charlieqyq.top:29999/AppliQuery.php
+- 输入数据
+	- 申请人信息
+		- ID
+		- 字符串类型
+- 返回数据
+	- 没有查询结果或查询失败
+		- "No Application or ERROR"
+	- 查询成功
+		- 申请时间
+			- AppTime
+			- 字符串类型 时间格式为："%Y-%M-%D %H:%M:%S"
+		- 房间名称
+			- RoomName
+			- 字符串类型
+		- 申请人ID
+			- AppID
+			- 字符串类型
+		- 周次
+			- Weeks
+			- 字符串类型
+		- 星期
+			- Weekdays
+			- 字符串类型
+		- 节次
+			- Times
+			- 字符串类型 '1,2' （还未测试）
+		- 申请原因
+			- AppReason
+			- 字符串类型
+		- 审批教师ID
+			- AppTeacherID
+			- 字符串类型
+		- 申请状态
+			- AppStatus
+			- 字符串类型

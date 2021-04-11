@@ -48,6 +48,10 @@
     - 完成ApplicationUpload.php的编写和自身调试，未与前端联合调试
     - 更新Guide.md
     - 上传修改的数据库设计
+- 2021.4.11
+	- 编写完成申请查询接口AppliQuery.php
+	- 完成ApplicationUpload.php的编写和自身调试，未与前端联合调试
+	- 更新Guide.md
 
 ## 其他
 - 域名是自己在腾讯云上购买的
