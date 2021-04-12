@@ -118,7 +118,7 @@
 		- 字符串类型
 	- 节次
 		- Times
-		- 字符串类型 '1,2' （还未测试）
+		- 字符串类型 '1,2' 
 	- 申请原因
 		- Reason
 		- 字符串类型
@@ -143,6 +143,10 @@
 	- 没有查询结果或查询失败
 		- "No Application or ERROR"
 	- 查询成功
+		- 申请编号
+			- AppNo
+			- 字符串类型
+			- **唯一标识**
 		- 申请时间
 			- AppTime
 			- 字符串类型 时间格式为："%Y-%M-%D %H:%M:%S"
@@ -160,7 +164,167 @@
 			- 字符串类型
 		- 节次
 			- Times
-			- 字符串类型 '1,2' （还未测试）
+			- 字符串类型 '1,2' 
+		- 申请原因
+			- AppReason
+			- 字符串类型
+		- 审批教师ID
+			- AppTeacherID
+			- 字符串类型
+		- 申请状态
+			- AppStatus
+			- 字符串类型
+
+### 6.教师申请查询接口
+- 功能：查询所有审批教师为ID的所有申请记录
+- 接口名：TeacherQuery.php
+- 地址:https://abc.charlieqyq.top:29999/TeacherQuery.php
+- 输入数据
+	- 教师工号
+		- TeacherID
+		- 字符串类型
+- 返回数据
+	- 没有查询结果或查询失败
+		- "No Application or ERROR"
+	- 查询成功
+		- 申请编号
+			- AppNo
+			- 字符串类型
+			- **唯一标识**
+		- 申请时间
+			- AppTime
+			- 字符串类型 时间格式为："%Y-%M-%D %H:%M:%S"
+		- 房间名称
+			- RoomName
+			- 字符串类型
+		- 申请人ID
+			- AppID
+			- 字符串类型
+		- 周次
+			- Weeks
+			- 字符串类型
+		- 星期
+			- Weekdays
+			- 字符串类型
+		- 节次
+			- Times
+			- 字符串类型 '1,2' 
+		- 申请原因
+			- AppReason
+			- 字符串类型
+		- 审批教师ID
+			- AppTeacherID
+			- 字符串类型
+		- 申请状态
+			- AppStatus
+			- 字符串类型
+
+### 7.教师审批接口
+- 功能：审批对应申请编号的申请记录（改变申请状态）
+- 接口名：Approval.php
+- 地址:https://abc.charlieqyq.top:29999/Approval.php
+- 输入数据
+	- 申请编号（可用申请信息查询接口获取）
+		- No
+		- 字符串类型
+	- 审批结果
+		- Status
+		- 字符串类型
+		- "PASS" / "FAIL"
+- 返回数据
+	- 更新失败
+		- "UPDATE ERROR:". "\<br\>" . \$sql . "\<br\>" . "ERROR Num: " . \$conn->errno;
+	- 更新成功
+		- "UPDATE Success" . "\<br\>"
+		- 申请编号
+			- AppNo
+			- 字符串类型
+		- 申请时间
+			- AppTime
+			- 字符串类型 时间格式为："%Y-%M-%D %H:%M:%S"
+		- 房间名称
+			- RoomName
+			- 字符串类型
+		- 申请人ID
+			- AppID
+			- 字符串类型
+		- 周次
+			- Weeks
+			- 字符串类型
+		- 星期
+			- Weekdays
+			- 字符串类型
+		- 节次
+			- Times
+			- 字符串类型 '1,2' 
+		- 申请原因
+			- AppReason
+			- 字符串类型
+		- 审批教师ID
+			- AppTeacherID
+			- 字符串类型
+		- 申请状态
+			- AppStatus
+			- 字符串类型
+
+### 8.申请修改接口
+- 功能：修改对应申请编号的申请记录
+- 接口名：Update.php
+- 地址:https://abc.charlieqyq.top:29999/Update.php
+- 输入数据
+	- 申请编号（可用申请信息查询接口获取）
+		- No
+		- 字符串类型
+	- 房间名称
+		- RoomName
+		- 字符串类型
+	- 周次
+		- Weeks
+		- 字符串类型
+	- 星期
+		- Weekdays
+		- 字符串类型
+	- 节次
+		- Times
+		- 字符串类型 '1,2' 
+	- 申请原因
+		- Reason
+		- 字符串类型
+	- 审批教师ID
+		- TeacherID
+		- 字符串类型
+	- 申请状态
+		- Status
+		- 字符串类型
+		- 只能为'WAIT'或'CANCEL'
+- 返回数据
+	- 申请状态不正确
+		- "ERROR! Status Should be 'WAIT' or 'CANCEL'!"
+	- 更新失败
+		- "UPDATE ERROR:". "\<br\>" . \$sql . "\<br\>" . "ERROR Num: " . \$conn->errno;
+	- 更新成功
+		- "UPDATE Success" . "\<br\>"
+		- 申请编号
+			- AppNo
+			- 字符串类型
+		- 申请时间
+			- AppTime
+			- 字符串类型 时间格式为："%Y-%M-%D %H:%M:%S"
+		- 房间名称
+			- RoomName
+			- 字符串类型
+		- 申请人ID
+			- AppID
+			- 字符串类型
+		- 周次
+			- Weeks
+			- 字符串类型
+		- 星期
+			- Weekdays
+			- 字符串类型
+		- 节次
+			- Times
+			- 字符串类型 '1,2'
 		- 申请原因
 			- AppReason
 			- 字符串类型

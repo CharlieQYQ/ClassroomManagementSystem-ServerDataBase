@@ -52,6 +52,12 @@
 	- 编写完成申请查询接口AppliQuery.php
 	- 完成ApplicationUpload.php的编写和自身调试，未与前端联合调试
 	- 更新Guide.md
+- 2021.4.12
+	- 编写完成教师审批接口Approval.php
+	- 编写完成教师审批查询接口TeacherQuery.php
+	- 编写完成申请信息修改接口Update.php
+	- 修改RoomQuery.php、AppliQuery.php和TeacherQuery
+	- 更新Guide.md
 
 ## 其他
 - 域名是自己在腾讯云上购买的
