@@ -22,8 +22,11 @@
 - 数据库连接
     - Navicat Premium v15
     - SQLyog
-- PHP编写：Visual Studio Code
-- 连接测试：Chrome浏览器
+- PHP编写
+    - Visual Studio Code
+    - PhpStorm
+- 连接测试
+    - Chrome浏览器
 - MarkDown编写
     - Typora
     - Visual Studio Code
@@ -58,6 +61,9 @@
 	- 编写完成申请信息修改接口Update.php
 	- 修改RoomQuery.php、AppliQuery.php和TeacherQuery
 	- 更新Guide.md
+- 2021.5.13
+    - 编写完成由申请编号查询申请信息的接口AppliNoQuery.php
+    - 更新Guide.md
 
 ## 其他
 - 域名是自己在腾讯云上购买的
